@@ -10,7 +10,7 @@ describe 'When a learning to build AoH,' do
     expect(assembled_aoh).to eq(result)
   end
 
-  it 'the literal_aoh method returns an AoH made made from a literal with sorted elements' do
+  it 'the literal_aoh method returns an AoH made from a literal with sorted elements' do
     result = [{:name=>"Don Gately", :occupation=>"Live-in Staff"},
        {:name=>"Joelle van Dyne", :occupation=>"Radio Personality"},
        {:name=>"Pat Monteseian", :occupation=>"Staff"},
@@ -20,7 +20,7 @@ describe 'When a learning to build AoH,' do
   end
 end
 
-describe 'When a learning to perform lookups in AoHs,' do
+describe 'When learning to perform lookups in AoHs,' do
   describe 'when given a aoh, row, and column argument,' do
     it 'the aoh_lookup method returns the requested value' do
       expect(aoh_lookup(assembled_aoh, 2, :name)).to eq("Pat Monteseian")
